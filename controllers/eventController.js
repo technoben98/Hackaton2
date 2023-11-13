@@ -3,7 +3,8 @@ const eventModel = require("../models/eventModel");
 const createEvent = async (req, res) => {
   try {
     const { title, description, date, capacity, attendees } = req.body;
-    const organizerId = req.user.id;
+    const organizerId = 3;
+    console.log("got request in controller");
 
     const newEvent = await eventModel.createEvent(
       title,
@@ -14,7 +15,7 @@ const createEvent = async (req, res) => {
       attendees
     );
 
-    await userModel.updateOrganizerStatus(organizerId, true);
+    // await userModel.updateOrganizerStatus(organizerId, true);
 
     res
       .status(201)

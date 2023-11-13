@@ -1,13 +1,15 @@
-async function createEvent(event) {
+async function newEvent(event) {
   event.preventDefault();
-
+  console.log("event start");
   const title = document.getElementById("title").value;
   const description = document.getElementById("description").value;
   const date = document.getElementById("date").value;
   const capacity = document.getElementById("capacity").value;
-  const attendees = 0;
+  const attendees = [1, 4];
   const type = document.getElementById("type").value;
+  console.log(type);
 
+  // Prepare the data to be sent to the server
   const formData = {
     title,
     description,
@@ -28,8 +30,8 @@ async function createEvent(event) {
 
     if (response.ok) {
       const result = await response.json();
-      console.log("Event created successfully", result.message);
-      window.location.href = "./source/eventPage.html";
+      console.log(result.message);
+      window.location.href = "/public/source/eventPage.html";
     } else {
       console.error("Error creating event:", response.statusText);
     }
@@ -37,4 +39,3 @@ async function createEvent(event) {
     console.error("Error during event creation:", error);
   }
 }
-// window.location.href = "./source/eventPage.html";

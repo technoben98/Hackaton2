@@ -23,7 +23,7 @@
 
     <!-- Main block start -->
 
-    <div class="form" id="createEventContainer">
+    <div class="form" id="createEventContainer" onsubmit="newEvent(event)">
       <h2>Create New Event</h2>
       <form id="createEventForm">
         <label for="title">Title:</label>
@@ -45,8 +45,6 @@
           <option value="homeless">Homeless</option>
           <option value="nature">Nature</option>
         </select>
-
-        <!-- Добавьте другие необходимые поля -->
 
         <button type="submit">Create Event</button>
       </form>

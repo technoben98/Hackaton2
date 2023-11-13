@@ -1,5 +1,8 @@
 body {
-  background-color: blanchedalmond;
+  background-image: url(https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2022/volunteer_Blog.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1.2em;
 }
 
 a {

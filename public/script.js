@@ -25,7 +25,7 @@ async function validate(event) {
     if (response.ok) {
       const result = await response.json();
       console.log(result.message);
-      window.location.href = "./source/choosePage.html";
+      window.location.href = "./source/eventPage.html";
     } else {
       console.error("Login failed:", response.statusText);
       alert("Invalid username or password");
@@ -73,7 +73,7 @@ async function register(event) {
     if (response.ok) {
       const result = await response.json();
       console.log(result.message);
-      window.location.href = "./source/choosePage.html";
+      window.location.href = "./source/eventPage.html";
     } else {
       console.error("Registration failed:", response.statusText);
     }

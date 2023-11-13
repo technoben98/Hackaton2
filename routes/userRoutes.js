@@ -8,4 +8,6 @@ router.post("/register", userController.registerUser);
 // Login part
 router.post("/validate", userController.validateUser);
 
+router.post("/login", userController.loginUser);
+
 module.exports = router;

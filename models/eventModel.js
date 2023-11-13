@@ -10,7 +10,7 @@ const createEvent = async (
   type
 ) => {
   const query = `
-      INSERT INTO events (title, description, date, organizerId, capacity, attendees, type)
+      INSERT INTO events (title, description, date, organizer_id, capacity, attendees, type)
       VALUES ($1, $2, $3, $4, $5, $6, $7)
       RETURNING *;
     `;
