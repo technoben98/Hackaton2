@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TenTova</title>
+    <link rel="stylesheet" href="/public/style.css" />
+  </head>
+  <body>
+    <!-- Navigation start -->
+    <div id="navigationBar">
+      <div id="leftSide">
+        <img id="logo" src="" alt="" />
+        <div id="home"><a href="choosePage.html">Home</a></div>
+      </div>
+
+      <div id="rightSide">
+        <!-- <div id="volunteerChoose">Volunteer</div>
+        <div id="organizatorChoose">Organizator</div> -->
+      </div>
+    </div>
+    <!-- Navigation End -->
+
+    <!-- Main block start -->
+
+    <div class="form" id="createEventContainer">
+      <h2>Create New Event</h2>
+      <form id="createEventForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required />
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="capacity">Capacity:</label>
+        <input type="number" id="capacity" name="capacity" required />
+
+        <label for="type">Type:</label>
+        <select id="type" name="type" required>
+          <option value="army">Army</option>
+          <option value="animals">Animals</option>
+          <option value="homeless">Homeless</option>
+          <option value="nature">Nature</option>
+        </select>
+
+        <!-- Добавьте другие необходимые поля -->
+
+        <button type="submit">Create Event</button>
+      </form>
+    </div>
+    <!-- Main block end -->
+    <script src="/public/source/createEvents.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TenTova</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Login start -->
+    <form id="loginForm" class="form" method="post" onsubmit="validate(event)">
+      <h2>Login</h2>
+      <label for="lgusername">Username:</label>
+      <input type="text" id="lgUsername" required /><br />
+      <label for="lgpassword">Password:</label>
+      <input type="password" id="lgPassword" required /><br />
+      <input type="submit" value="Login" />
+      <input type="button" value="Sign Up" onclick="goToRegister()" />
+    </form>
+
+    <!-- Login end -->
+    <!-- Register start -->
+    <form id="registerForm" class="form" onsubmit="register(event)">
+      <h2>Sign Up</h2>
+      <label for="rgUsername">Username:</label>
+      <input type="text" id="rgUsername" required /><br />
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" required /><br />
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" required /><br />
+      <label for="email">Email</label>
+      <input
+        id="email"
+        type="text"
+        placeholder="Enter Email"
+        name="email"
+        required
+      /><br />
+      <label for="rgPassword">Password:</label>
+      <input type="password" id="rgPassword" required /><br />
+      <label for="phoneNumber">Phone number:</label>
+      <input type="text" id="phoneNumber" required /><br />
+      <input type="submit" value="Sing Up" / ">
+      <input type="button" value="Login" onclick="backToLogin()" />
+    </form>
+    <!-- Register end -->
+    <script src="script.js"></script>
+  </body>
+</html>

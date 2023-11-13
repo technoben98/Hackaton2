@@ -1,0 +1,86 @@
+body {
+  background-color: blanchedalmond;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#loginForm {
+  display: block;
+  width: 40vw;
+  text-align: center;
+  height: 30vh;
+  background-color: rgb(198, 230, 230);
+  margin: 20% auto;
+  padding: 1%;
+}
+
+#registerForm {
+  display: none;
+  width: 40vw;
+  text-align: center;
+  height: 50vh;
+  background-color: rgb(198, 230, 230);
+  margin: 10% auto;
+  padding: 1%;
+}
+
+label {
+  display: block;
+  margin: 1%;
+}
+
+input {
+  border: none;
+}
+
+#navigationBar {
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#rightSide {
+  display: flex;
+  justify-content: end;
+  /* padding: 1%; */
+}
+
+#rightSide div {
+  padding: 5%;
+}
+
+#mainChoose {
+  height: 95vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#eventsCards {
+  display: flex;
+  flex-direction: column;
+  margin: 2% auto;
+  width: 70vw;
+}
+.eventCard {
+  margin: 1%;
+  background-color: rgb(230, 228, 228);
+  padding: 2%;
+}
+
+.eventCard p {
+  font-size: 1.1em;
+}
+
+#createEventContainer {
+  width: 40vw;
+  text-align: center;
+  height: 50vh;
+  background-color: rgb(198, 230, 230);
+  margin: 10% auto;
+  padding: 1%;
+}
