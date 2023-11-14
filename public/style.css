@@ -49,7 +49,6 @@ input {
 #rightSide {
   display: flex;
   justify-content: end;
-  /* padding: 1%; */
 }
 
 #rightSide div {
@@ -86,4 +85,23 @@ input {
   background-color: rgb(198, 230, 230);
   margin: 10% auto;
   padding: 1%;
+}
+
+#filterButtons button {
+  height: 50px;
+  width: 250px;
+  font-size: 1.3em;
+}
+
+#organizatorChoose a {
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 150px;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.3em;
 }

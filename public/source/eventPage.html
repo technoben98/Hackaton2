@@ -11,9 +11,17 @@
     <div id="navigationBar">
       <div id="leftSide">
         <img id="logo" src="" alt="" />
-        <div id="home"><a href="choosePage.html">Home</a></div>
+        <!-- <div id="home"><a href="choosePage.html">Home</a></div> -->
       </div>
-
+      <div id="searchBar">
+        <div id="filterButtons">
+          <button onclick="filterEvents('army')">Army</button>
+          <button onclick="filterEvents('animals')">Animals</button>
+          <button onclick="filterEvents('peoples')">Peoples</button>
+          <button onclick="filterEvents('nature')">Nature</button>
+          <button onclick="fetchAllEvents()">All Events</button>
+        </div>
+      </div>
       <div id="rightSide">
         <div id="organizatorChoose">
           <a href="createEventPage.html">Create event</a>
@@ -26,15 +34,6 @@
     <!-- Main block start -->
 
     <div id="eventsContainer">
-      <div id="searchBar">
-        <div id="filterButtons">
-          <button onclick="filterEvents('army')">Army</button>
-          <button onclick="filterEvents('animals')">Animals</button>
-          <button onclick="filterEvents('peoples')">Peoples</button>
-          <button onclick="filterEvents('nature')">Nature</button>
-          <button onclick="fetchAllEvents()">All Events</button>
-        </div>
-      </div>
       <div id="eventsCards"></div>
     </div>
     <!-- Main block end -->
